@@ -35,9 +35,9 @@ namespace datastructures {
         void insert(int insertAt, int value) ;
         void leftShiftingInsert(int insertAt , int value ) ;
 
-        void insertAtTail(int value) const;
+        void insertAtTail(int value) ;
 
-        void insertAtHead(int value) const;
+        void insertAtHead(int value) ;
 
         void remove(int index) const;
 

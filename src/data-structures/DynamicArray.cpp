@@ -112,6 +112,15 @@ void DynamicArray::leftShiftingInsert(const int insertAt,const int value) {
 
 }
 
+void DynamicArray::insertAtTail(const int value)  {
+    insert(size-1,value);
+}
+
+
+void DynamicArray::insertAtHead(const int value)  {
+    insert(size-1,value);
+}
+
 
 void DynamicArray::shrinking_array() {
     capacity /= 2;
