@@ -1,16 +1,17 @@
 #include <iostream>
 
+#include "src/data-structures/DynamicArray.h"
 #include "src/data-structures/StaticArray.h"
 using namespace  datastructures;
 int main() {
-    int a[2] = {10  ,20} ;
-    const auto array = new StaticArray(4);
-    array->set(0,10) ;
-    array->set(1,100) ;
-    array->set(2,1000) ;
+    const auto array = new DynamicArray(16);
+    array->insertAtTail(1) ;
+    array->insertAtTail(2) ;
+    array->insertAtTail(3) ;
+    array->insertAtTail(4) ;
     array->display();
-    array->insert(4,20);
-    array->display();
+    std::cout << array->binarySearch(-1);
+;
 
     return 0;
 }

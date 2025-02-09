@@ -4,9 +4,11 @@
 
 #ifndef DYNAMICARRAY_H
 #define DYNAMICARRAY_H
+#include <string>
+
+namespace  datastructures {
 
 
-namespace datastructures {
     class DynamicArray {
     public:
         DynamicArray();
@@ -18,6 +20,7 @@ namespace datastructures {
         ~DynamicArray() = default;
 
         void display() const;
+        std::string toString() const ;
 
         [[nodiscard]] int getSize() const;
 
@@ -39,9 +42,9 @@ namespace datastructures {
 
         void insertAtHead(int value) ;
 
-        void remove(int index) const;
+        int remove(int index) ;
 
-        int pop() const;
+        int pop() ;
 
     private:
         int *array;
@@ -52,6 +55,5 @@ namespace datastructures {
         void shrinking_array() ;
     };
 }
-
 
 #endif //DYNAMICARRAY_H
